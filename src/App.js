@@ -52,7 +52,7 @@ function App() {
   const fetchQuestions = async () => {
     try {
       setIsLoading(true);
-      const API_KEY = process.env.API_KEY;
+      const API_KEY = "AIzaSyBJshvkJQUR9IXW2i03CUBfDWY7_ffWpqI";
       const genAI = new GoogleGenerativeAI(API_KEY);
       const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 

@@ -109,7 +109,7 @@ function App() {
           </div>
         </div>
       </header>
-      <div className="max-w-6xl mx-auto py-6 sm:px-6 lg:px-8">
+      <div className="max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
         <form onSubmit={handleSubmit} className="flex flex-col border border-black p-6 rounded-2xl bg-gray-200 px-4 space-y-4">
           <input 
             required

@@ -90,7 +90,7 @@ function App() {
   );
 
   return (
-    <div className="min-h-screen bg-blue-50">
+    <div className="min-h-screen w-screen bg-blue-50">
       <header className="sticky top-0 bg-black shadow">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
@@ -109,8 +109,9 @@ function App() {
           </div>
         </div>
       </header>
-      <div className="max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
-        <form onSubmit={handleSubmit} className="flex flex-col border border-black p-6 rounded-2xl bg-gray-200 px-4 space-y-4">
+          <div className='h-screen w-screen flex flex-col items-center justify-center'>
+          <div className="w-[90vw] py-6 sm:px-6 lg:px-8">
+        <form onSubmit={handleSubmit} className="flex px-4 flex-col border border-black p-6 rounded-2xl bg-gray-200 px-4 space-y-4">
           <input 
             required
             type="text" 
@@ -173,6 +174,7 @@ function App() {
           </div>
         )}
       </div>
+          </div>
     </div>
   );
 }

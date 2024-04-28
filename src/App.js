@@ -109,7 +109,7 @@ function App() {
           </div>
         </div>
       </header>
-          <div className='w-screen flex flex-col items-center justify-center'>
+          <div className='w-screen flex flex-col items-center overflow-x-hidden justify-center'>
           <div className="w-[90vw] py-6 sm:px-6 lg:px-8">
         <form onSubmit={handleSubmit} className="flex px-4 flex-col border border-black p-6 rounded-2xl bg-gray-200 px-4 space-y-4">
           <input 

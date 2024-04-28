@@ -52,7 +52,7 @@ function App() {
   const fetchQuestions = async () => {
     try {
       setIsLoading(true);
-      const API_KEY = "AIzaSyBJshvkJQUR9IXW2i03CUBfDWY7_ffWpqI";
+      const API_KEY = process.env.API_KEY;
       const genAI = new GoogleGenerativeAI(API_KEY);
       const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
@@ -90,7 +90,7 @@ function App() {
   );
 
   return (
-    <div className="min-h-screen w-screen bg-blue-50">
+    <div className="min-h-screen overflow-x-hidden w-screen bg-blue-50">
       <header className="sticky top-0 bg-black shadow">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
